@@ -1,1 +1,5 @@
-# mild-jelly
+# mild-jelly Group Project
+
+## TODO
+
+* Favicon
