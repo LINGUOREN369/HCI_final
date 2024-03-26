@@ -1,0 +1,23 @@
+{
+  "name": "mild-jelly",
+  "version": "1.0.0",
+  "description": "## TODO",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mdrxy/mild-jelly.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mdrxy/mild-jelly/issues"
+  },
+  "homepage": "https://github.com/mdrxy/mild-jelly#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "vue": "^3.4.21"
+  }
+}
