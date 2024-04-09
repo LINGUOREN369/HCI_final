@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Working Prototype</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="stylesheets/main.css">
+    <link rel="stylesheet" href="stylesheets/playlist-page.css">
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
 </head>
 <body>
     <div class="container center-page bg" style="height: 900px;">
+        <!-- ----- Exit Button ----- -->
         <div class="row mt-2">
             <h2 class="header">Favorites</h2>
+            <button class="btn btn-placement">Exit</button>
         </div>
+        <!-- -------- Horizontal Scroll --------- -->
         <div class="row mt-3">
             <div class="col-md-6">
                 <div class="outer-x">
@@ -55,87 +58,89 @@
                   </div>
             </div>
         </div>
-
+        <!-- sort and filter button -->
         <div class="row mt-2">
-            <!-- sort button -->
-            <button class="animated-button" style="display: inline-block; margin: 5px 10px;">
-                <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-                ></path>
-                </svg>
-                <span class="text" style="margin: 5px 10px;">Sort </span>
-                <span class="circle"></span>
-                <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-                ></path>
-                </svg>
-            </button>
-            <!-- filter button -->
-            <button class="animated-button" style="display: inline-block; margin: 5px 10px;">
-                <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-                ></path>
-                </svg>
-                <span class="text" style="margin: 5px 10px;">Filter </span>
-                <span class="circle"></span>
-                <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
-                <path
-                    d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
-                ></path>
-                </svg>
-            </button>
+            <div class="center-page">
+                <!-- sort button -->
+                <button class="animated-button" style="display: inline-block; margin: 5px 10px;">
+                    <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                    ></path>
+                    </svg>
+                    <span class="text" style="margin: 5px 10px;">Sort </span>
+                    <span class="circle"></span>
+                    <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                    ></path>
+                    </svg>
+                </button>
+                <!-- filter button -->
+                <button class="animated-button" style="display: inline-block; margin: 5px 10px;">
+                    <svg viewBox="0 0 24 24" class="arr-2" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                    ></path>
+                    </svg>
+                    <span class="text" style="margin: 5px 10px;">Filter </span>
+                    <span class="circle"></span>
+                    <svg viewBox="0 0 24 24" class="arr-1" xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z"
+                    ></path>
+                    </svg>
+                </button>
+            </div>
         </div>
-
+        <!-- --------- Vertical Scroll ----------- -->
         <div class="row mt-4" >
-            <div class="col-md-6">
+            <div class="col-md-12" style="margin-left: 20px;">
                 <div class="outer-y">
                     <!-- album cover 1 -->
-                    <div> 
-                        <img src="album covers/album cover 9.png" class="album-cover-2 image-with-span" alt="album cover 9">
-                        <p class="song-name-style">Remember</p> 
+                    <div class="image-with-span"> 
+                        <img src="album covers/album cover 9.png" class="album-cover-2"  alt="album cover 9">
+                        <p class="song-name-style song-placement">Remember</p> 
                     </div> <br>
                     <!-- album cover 2 -->
-                    <div>
-                        <img src="album covers/album cover 9.png" class="album-cover-2 image-with-span" alt="album cover 9">
-                        <p class="song-name-style">Only Friend</p> 
+                    <div class="image-with-span">
+                        <img src="album covers/album cover 9.png" class="album-cover-2" alt="album cover 9">
+                        <p class="song-name-style song-placement">Only Friend</p> 
                     </div> <br>
                     <!-- album cover 3 -->
-                    <div>
+                    <div class="image-with-span">
                         <img src="album covers/album cover 2.jpeg" class="album-cover-2" alt="album cover 2">
-                        <p class="song-name-style">Luv (sic.) pt3 (feat. Shing02)</p> 
+                        <p class="song-name-style song-placement">Luv (sic.) pt3 (feat. Shing02)</p> 
                     </div> <br>
                     <!-- album cover 4 -->
-                    <div>
+                    <div class="image-with-span">
                         <img src="album covers/album cover 3.jpeg" class="album-cover-2" alt="album cover 3">
-                        <p class="song-name-style">Bad Habit</p> 
+                        <p class="song-name-style song-placement">Bad Habit</p> 
                     </div> <br>
                     <!-- album cover 5 -->
-                    <div>
+                    <div class="image-with-span">
                         <img src="album covers/album cover 6.jpeg" class="album-cover-2" alt="album cover 6">
-                        <p class="song-name-style">Guilty Conscience</p> 
+                        <p class="song-name-style song-placement">Guilty Conscience</p> 
                     </div> <br>
                     <!-- album cover 6 -->
-                    <div>
+                    <div class="image-with-span">
                         <img src="album covers/album cover 6.jpeg" class="album-cover-2" alt="album cover 6">
-                        <p class="song-name-style">Come Around</p> 
+                        <p class="song-name-style song-placement">Come Around</p> 
                     </div> <br>
                     <!-- album cover 7 -->
-                    <div>
+                    <div class="image-with-span">
                         <img src="album covers/album cover 1.jpeg" class="album-cover-2" alt="album cover 1">
-                        <p class="song-name-style">Pink + White</p> 
+                        <p class="song-name-style song-placement">Pink + White</p> 
                     </div> <br>
                     <!-- album cover 8 -->
-                    <div>
+                    <div class="image-with-span">
                         <img src="album covers/album cover 10.webp" class="album-cover-2" alt="album cover 1">
-                        <p class="song-name-style">Chanel</p> 
+                        <p class="song-name-style song-placement">Chanel</p> 
                     </div> <br>
                     <!-- album cover 9 -->
-                    <div>
+                    <div class="image-with-span">
                         <img src="album covers/album cover 5.jpg" class="album-cover-2" alt="album cover 5">
-                        <p class="song-name-style">Rosewood</p> 
+                        <p class="song-name-style song-placement">Rosewood</p> 
                     </div> <br>
                   </div>
             </div>
