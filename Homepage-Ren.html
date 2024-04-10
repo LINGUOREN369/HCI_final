@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Music Player</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="stylesheet/main.css">
+    <link rel="icon" type="image/png" href="Images/favicon.ico">
+</head>
+<body>
+    <div class="top-buttons">
+        <a href="Homepage-Ren.html">
+            <button class="btn btn-primary color-primary btn-lg" style="float: left; width: 215px;">New Playlist</button>
+        </a>
+        
+        <a href="Homepage-Ren.html">
+            <button class="btn btn-secondary color-primary btn-lg" style="float: right; width: 215px;">My Playlist</button>
+        </a>
+    </div>
+    </div>
+
+    <div class="circle-buttons">
+        <div style="position: absolute; top: 8%; right: 42px;">
+            <a href="Homepage-Ren.html">
+                <button class="btn btn-outline-dark">&#9776;</button>
+            </a>
+        </div>
+
+        <div style="position: absolute; top: 13%; right: 42px;">
+            <a href="Homepage-Ren.html">
+                <button class="btn btn-outline-dark">&#9654;</button>
+            </a>
+        </div>
+
+        <div style="position: absolute; top: 18%; right: 40px;">
+            <a href="Homepage-Ren.html">
+                <button class="btn btn-outline-dark">&#9664;</button>
+            </a>
+        </div>
+
+        <div style="position: absolute; top: 23%; right: 40px;">
+            <a href="Homepage-Ren.html">
+                <button class="btn btn-outline-dark">&#10074;&#10074;</button>
+            </a>
+        </div>
+
+        <div style="position: absolute; top: 28%; right: 40px;">
+            <a href="Homepage-Ren.html">
+                <button class="btn btn-outline-dark">&#x1F44D;</button>
+            </a>
+        </div>
+
+        <div style="position: absolute; top: 33%; right: 40px;">
+            <a href="Homepage-Ren.html">
+                <button class="btn btn-outline-dark">&#x1F44E;</button>
+            </a>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="details">
+            <div class="track-art"></div>
+            <div class="track-name">I love MILD-JELLY</div>
+            <div class="track-artist">Mason D</div>
+
+            <div class="buttons">
+                <div class="prev-track" onclick="prevTrack()">
+                    <i class="fa fa-step-backward fa-2x"></i>
+                </div>
+                <div class="playpause-track" onclick="playpauseTrack()">
+                    <i class="fa fa-play-circle fa-5x"></i>
+                </div>
+                <div class="next-track" onclick="nextTrack()">
+                    <i class="fa fa-step-forward fa-2x"></i>
+                </div>
+            </div>
+
+            <div class="slider-container">
+                <div class="current-time">00:00</div>
+                <input type="range" min="1" max="100" value="0" class="seek-slider" onchange="seekTo()">
+                <div class="total-duration">00:00</div>
+            </div>
+
+            <div class="slider-container">
+                <i class="fa fa-volume-down"></i>
+                <input type="range" min="1" max="100" value="99" class="volume-slider" onchange="setVolume()">
+                <i class="fa fa-volume-up"></i>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+
+    <div class="button-container">
+        <div class="dropdown"></div></div>
+            <button class="btn btn-primary color-primary btn-lg btn-block dropdown-toggle" type="button" id="moodDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Mood
+            </button>
+            <div class="dropdown-menu" aria-labelledby="moodDropdown">
+                <a class="dropdown-item" href="#">Happy</a>
+                <a class="dropdown-item" href="#">Sad</a>
+                <a class="dropdown-item" href="#">Energetic</a>
+                <a class="dropdown-item" href="#">Relaxed</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-primary color-primary btn-lg btn-block dropdown-toggle" type="button" id="lyricsDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Lyrics
+            </button>
+            <div class="dropdown-menu" aria-labelledby="lyricsDropdown">
+                <a class="dropdown-item" href="#">Love</a>
+                <a class="dropdown-item" href="#">Heartbreak</a>
+                <a class="dropdown-item" href="#">Inspiration</a>
+                <a class="dropdown-item" href="#">Party</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-primary color-primary btn-lg btn-block dropdown-toggle" type="button" id="activityDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Activity
+            </button>
+            <div class="dropdown-menu" aria-labelledby="activityDropdown">
+                <a class="dropdown-item" href="#">Workout</a>
+                <a class="dropdown-item" href="#">Study</a>
+                <a class="dropdown-item" href="#">Relaxation</a>
+                <a class="dropdown-item" href="#">Driving</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-primary color-primary btn-lg btn-block dropdown-toggle" type="button" id="genreDropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Genre
+            </button>
+            <div class="dropdown-menu" aria-labelledby="genreDropdown">
+                <a class="dropdown-item" href="#">Pop</a>
+                <a class="dropdown-item" href="#">Rock</a>
+                <a class="dropdown-item" href="#">Hip Hop</a>
+                <a class="dropdown-item" href="#">Electronic</a>
+            </div>
+        </div>
+    </div>
+   
+    
+</body>
+</html>
+
