@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Music Player</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet"
+        href=
+"https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+    <link rel="stylesheet" href="stylesheet/jk-main.css">
+    <link rel="icon" type="image/png" href="Images/favicon.ico">
+</head>
+<body>
+    <div class="top-buttons">
+        <a href="if-index.html"> <!-- Put URL for New Playlist page here -->
+            <button class="btn btn-primary color-primary btn-lg" style="float: left; width: 215px;">New Playlist</button>
+        </a>
+        
+        <a href="playlist-page.html"> <!-- Put URL for My Playlists page here --> 
+            <button class="btn btn-secondary color-primary btn-lg" style="float: right; width: 215px;">My Playlists</button>
+        </a>
+    </div>
+
+    <div class="circle-buttons">
+        <div style="position: absolute; top: 10%; right: 42px;">
+                <button class="btn btn-outline-dark">&#9776;</button>
+        </div>
+
+        <div style="position: absolute; top: 18%; right: 42px;">
+                <button class="btn btn-outline-dark">&#9654;</button>
+        </div>
+
+        <div style="position: absolute; top: 26%; right: 42px;">
+                <button class="btn btn-outline-dark">&#9664;</button>
+        </div>
+
+        <div style="position: absolute; top: 34%; right: 42px;">
+                <button class="btn btn-outline-dark">&#10074;&#10074;</button>
+        </div>
+
+        <div style="position: absolute; top: 42%; right: 42px;">
+                <button class="btn btn-outline-dark">&#x1F44D;</button>
+        </div>
+
+        <div style="position: absolute; top: 50%; right: 42px;">
+                <button class="btn btn-outline-dark">&#x1F44E;</button>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="details">
+            <img class="albumArt" src="albumArt.jpeg" alt="Album Art">
+            <div class="track-name">Song Title</div>
+            <div class="track-artist">Artist</div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+   
+
+    <div class="container">
+        <div class="details">
+            <div class="playlist-name">Playlist Name</div>
+            <div class="top-buttons">
+                    <button class="btn btn-primary color-primary btn-lg" style="float: left; width: 215px;">Playlist Settings</button>
+        </div>
+    </div>
+
+    <!-- --------- Vertical Scroll ----------- -->
+    <div class="row mt-4" >
+        <div class="col-md-12" style="margin-left: 20px;">
+            <div class="outer-y">
+                <!-- album cover 1 -->
+                <div class="image-with-span"> 
+                    <img src="album covers/album cover 9.png" class="album-cover-2"  alt="album cover 9">
+                    <p class="song-name-style song-placement">Song.1</p> 
+                </div> <br>
+                <!-- album cover 2 -->
+                <div class="image-with-span">
+                    <img src="album covers/album cover 9.png" class="album-cover-2" alt="album cover 9">
+                    <p class="song-name-style song-placement">Song.2</p> 
+                </div> <br>
+                <!-- album cover 3 -->
+                <div class="image-with-span">
+                    <img src="album covers/album cover 2.jpeg" class="album-cover-2" alt="album cover 2">
+                    <p class="song-name-style song-placement">Song.3</p> 
+                </div> <br>
+                <!-- album cover 4 -->
+                <div class="image-with-span">
+                    <img src="album covers/album cover 3.jpeg" class="album-cover-2" alt="album cover 3">
+                    <p class="song-name-style song-placement">Song.4</p> 
+                </div> <br>
+                <!-- album cover 5 -->
+                <div class="image-with-span">
+                    <img src="album covers/album cover 6.jpeg" class="album-cover-2" alt="album cover 6">
+                    <p class="song-name-style song-placement">Song.5</p> 
+                </div> <br>
+              </div>
+        </div>
+    </div>
+</body>
+</html>

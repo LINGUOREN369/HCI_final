@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="stylesheet/if-styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working Prototype</title>
+    <link href="/node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="container center">
+        <p>Create a Playlist:</p>
+    </div>
+    <div class="center">
+        <label for="music">New Music:</label>
+        <input class="slider" type="range" min="0" max="100" value="50"> 
+        
+        <hr>
+        <label for="mood">Mood:</label>
+        <select name="mood" id="mood">
+            <option value="happy">Happy</option>
+            <option value="background">Background</option>
+            <option value="crazy">Crazy</option>
+            <option value="dreaminess">Dreaminess</option>
+        </select>
+        <hr>
+
+        <label for="lyrics">Lyrics:</label>
+        <form>
+            <input type="radio" id="on" name="lyrics" value="on">
+            <label for="on">ON</label><br>
+            <input type="radio" id="off" name="lyrics" value="off">
+            <label for="off">OFF</label><br>
+            <input type="radio" id="mix" name="lyrics" value="mix">
+            <label for="mix">MIX</label>
+        </form>
+        <hr>
+        
+        <label for="activity">Activity:</label>
+        <select name="activity" id="activity">
+            <option value="study">Study</option>
+            <option value="hype gym">Gym</option>
+            <option value="walking">Walking</option>
+            <option value="shower">Shower</option>
+        </select>
+        <hr>
+
+        <label for="genre">Genre:</label>
+        <select name="genre" id="genre">
+            <option value="rock">Rock</option>
+            <option value="jazz">Jazz</option>
+            <option value="country">Country</option>
+            <option value="classical">Classical</option>
+            <option value="electronic">Electronic</option>
+            <option value="indie">Indie Rock</option>
+        </select>
+        <hr>
+
+        <form>
+            <label for="quantity"># of songs</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="200">
+        </form>
+    </div>
+    <div class="container center">
+        <a href="index.html">
+            <p>Lets go!</p>
+        </a>
+    </div>
+</body>
+</html>
