@@ -51,7 +51,7 @@ body {
   margin: 25px;
   height: 250px;
   width: 250px;
-  background-image: url("../Images/MusicCover.png");
+  background-image: url("../assets/images/albumArt.jpeg");
   background-size: cover;
   background-position: center;
   border-radius: 15%;
@@ -179,11 +179,11 @@ i.fa-step-backward {
   right: 20px;
 }
 
-
-  .color-primary {
-      background-color: rgb(230, 215, 238); /* Change this to the color you desire */
-      border-color: #00050a; /* Change this to match the background-color */
-      color: #080707; /* Change this to the desired text color */
-  }
-
-  
+.color-primary {
+  background-color: rgb(230, 215, 238);
+  /* Change this to the color you desire */
+  border-color: #00050a;
+  /* Change this to match the background-color */
+  color: #080707;
+  /* Change this to the desired text color */
+}
