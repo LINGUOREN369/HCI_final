@@ -1,4 +1,4 @@
-# {Github Link} [https://github.com/mdrxy/mild-jelly]
+1. [Github link](https://github.com/mdrxy/mild-jelly)
 # mild-jelly Group Project
 
 ## Tasks
