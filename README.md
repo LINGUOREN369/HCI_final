@@ -21,6 +21,13 @@ Given that the majority of people across the world regularly listen to music, we
 5. Tech/AI Lovers: this will create more creative working opportunities for those people to develop cool algorithms with their expertise.
 
 ## Notes
-There are fours pages total in this program. Two of the pages can be accessed from the home and the remaining page can be accessed by clicking the album photo in the "my playlists" tab.
+1. There are fours pages total in this program. Two of the pages can be accessed from the home and the remaining page can be accessed by clicking the album photo in the "My Playlists" tab.
+2. This application is best experienced when used on a mobile screen. This can be accomplished on MacOS by:
+    i. right-clicking on the page
+    ii. select inspect
+    iii. click the icon that shows two screen, one vertical and the other horizontal.
+    IV. Click on the 'responsive design' button above the page view to select the device which you'd like to simulate.
+
+
 
 
